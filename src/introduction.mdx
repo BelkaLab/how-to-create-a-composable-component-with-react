@@ -1,0 +1,35 @@
+import { Meta } from '@storybook/addon-docs';
+import { Button } from '@/components/button';
+
+<Meta title="Introduction" />
+
+{/* <Readme /> */}
+
+import imageUrl from './assets/background.png';
+
+# How to create a composable component with React
+
+<div
+  style={{
+    display: 'flex',
+    flexDirection: 'column',
+    justifyItems: 'center',
+    alignItems: 'center',
+  }}
+>
+  <img src={imageUrl} alt="background" style={{ width: '540px' }} />
+</div>
+
+<p style={{fontSize: '18px'}}>
+
+As projects grow, UI components often become large and difficult to manage. This can lead to complex, hard-to-update code that slows down development.
+
+Compound and composable components offer a solution. By breaking down a UI into smaller, reusable parts, you can keep your code more flexible and easier to maintain. Composable components are made of self-contained subcomponents that you can mix and match as needed, while compound components group subcomponents that work together but need each other to function.
+
+This approach helps you avoid rewriting large sections of code and makes it easier to manage new design requests and updates.
+
+Check the example below to see how it works.
+
+</p>
+
+[Go to card story](?path=/story/components-card--default-card)
